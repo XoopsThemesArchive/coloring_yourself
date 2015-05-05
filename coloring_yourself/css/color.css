@@ -1,0 +1,536 @@
+/*------------------------------------------------
+Designed by EXTRAFFIC	copyright (c) ExPiece
+          http://www.expiece.com/html/
+this template is only color setting template CSS
+------------------------------------------------*/
+/*================================================
+==================================================
+このCSSは文字色、背景、枠線などの
+色に関するセッティングをしてます。
+
+好みのものにするには、このファイルをいじりましょう！
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!何をするにもどっかにコピーをとってからにしましょう!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+==================================================
+==================================================
+サンプル -> なんちゃってCSSの記述例
+
+{と}の間に記述する編
+==================================================
+
+color: #fff;
+------------
+color = フォント（文字）の色を設定する
+#fff  = 16進数で表すRGBカラー。これは白。
+
+==================================================
+
+border: 1px solid #000;
+-----------------------
+border = 枠線を設定する。他にborder-leftとか有り
+1px    = 線の太さ。これは１ピクセル。
+solid  = 線の種類。これは実線。他に、dotted = 点線 とか有り
+#000   = 16進数で表すRGBカラー。これは黒。
+
+==================================================
+
+background: #000;
+-----------------
+background = 背景を設定する
+#000       = 16進数で表すRGBカラー。これは黒。
+
+＊＊こんなんも有り＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+
+background: #000 url(../image/hogefuga.jpg) repeat-y left top;
+--------------------------------
+これは背景色#000（黒）の上から、
+hogefuga.jpg（hogefuga画像を）left（左）top（上から）
+repeat-y（上下に繰り返し貼り付ける）
+
+==================================================
+
+その他に最低知識として
+----------------------
+{と}の前に記述する編
+--------------------------------------------------
+a {なんとかかんとか}はリンクの設定
+--------------------------------------------------
+a:hover {なんとかかんとか}はリンクのポインタ時の設定
+--------------------------------------------------
+================================================*/
+/*------------------------------------------------
+setting for all
+------------------------------------------------*/
+* {padding: 0; margin: 0;}
+
+body {
+	color: #000;
+	background: #eee;
+}
+/*リンク全般定義-----------------------*/
+/*リンク*/
+a {
+	color: #33f;
+}
+
+/*ポインタ中*/
+a:hover {
+	color: #f33;
+}
+/*setting for global tags---------------------*/
+h1 {}
+h2 {}
+h3 {}
+h4,h5 {}
+#l_clr_r_wrap input {
+	color: #33f;
+	background: #fff;
+	border: 1px solid #aaa;
+}
+#l_clr_r_wrap textarea {
+	color: #33f;
+	background: #fff;
+	border: 1px solid #aaa;
+}
+#l_clr_r_wrap select {
+	color: #33f;
+	background: #fff;
+	border: 1px solid #aaa;
+}
+#l_clr_r_wrap input:hover,
+#l_clr_r_wrap textarea:hover,
+#l_clr_r_wrap select:hover {
+	color: #000;
+	background: #eef;
+	border: 1px solid #33f;
+}
+abbr, acronym {
+	border-bottom: 1px dotted #191919;
+}
+.clearboth {}
+/*setting for global list tags-------------------*/
+ul {}
+li {}
+/*-----------------------------------------------
+global class or id is
+body#body
+-----------------------------------------------*/
+div.container {}
+/*-----------------------------------------------
+[ global menu in header ]
+global class or id is
+div#container
+-----------------------------------------------*/
+/*global tab menu in header-------------------*/
+.global_menu_wrap {
+	background: #ddd;
+}
+/*-----------------------------------------------
+global class or id is
+div.global_menu_wrap
+-----------------------------------------------*/
+.global_menu {
+/*setting all tab menu in header*/
+}
+/*-----------------------------------------------
+global class or id is
+div.global_menu
+-----------------------------------------------*/
+/*setting one for the tab menu of all in header*/
+.menu_li_ {}
+.menu_li_ a {
+	background: url(../image/menu.jpg) no-repeat left top;
+}
+/*setting of hovering tab menu in header*/
+.menu_li_ a:hover {
+	background:  #ccc url(../image/menu.jpg) no-repeat right top;
+}
+/*setting for selected tab menu in header*/
+.menu_li_selected {}
+.menu_li_selected a {
+	background: #fff url(../image/menu_selected.jpg) no-repeat left top;
+}
+.menu_li_selected a:hover {
+	background: #ccc url(../image/menu_selected.jpg) no-repeat right top;
+}
+/*-----------------------------------------------
+[ global in header ]
+global class or id is
+div#container
+-----------------------------------------------*/
+.header_wrap {
+	background: url(../image/header_rbg.jpg) no-repeat right top;
+}
+.header_title {
+	background: #fff url(../image/logo.jpg) no-repeat left;
+}
+.header_title h1, .header_title p {
+	color: #990;
+}
+.header_title h2 {}
+.header_title p a {
+	color: #33f;
+}
+.header_title p a:hover {
+	color: #33f;
+}
+/*-----------------------------------------------
+global class or id is
+div.global_menu_wrap
+-----------------------------------------------*/
+.hidden_navi {}
+/*-----------------------------------------------
+[ バナー表示部の定義 ]
+global class or id is
+div#l_clr_r_wrap
+-----------------------------------------------*/
+#banner {}
+/*-----------------------------------------------
+[ フッタブロックの定義 ]
+global class or id is
+div#l_clr_r_wrap
+-----------------------------------------------*/
+address.footer {
+	background: url(../image/footer_rbg.jpg) no-repeat right top;
+}
+.extraffic {}
+/*-----------------------------------------------
+global class or id is
+#centercolumn
+-----------------------------------------------*/
+/*スクロールアップ-------------------*/
+div.scroll {}
+.scroll p {}
+.scroll a {
+	background: url(../image/scroll_up.gif) no-repeat left;
+}
+.scroll a:hover {
+	background: url(../image/scroll_up.gif) no-repeat right;
+}
+/*モジュール定義---------------------*/
+#content {}
+#content h1 {
+	color: #aaa;
+	border-left: 15px solid #aaa;
+	border-right: 2px solid #aaa;
+	border-top: 2px solid #aaa;
+	border-bottom: 2px solid #aaa;
+	background: #eee url(../image/h1_icon.jpg) no-repeat left;
+}
+#content h2 {}
+#content h3,
+#content h4 {}
+#content legend {}
+/*-----------------------------------------------
+ページナビ
+If you use EXTRAFFIC customized pagenav.php,
+You can use this class. (for XOOPS 2.0 not X.C.L)
+-----------------------------------------------*/
+span.pagenav_on {
+	border: 1px solid #ddd;
+}
+span.pagenav_off {
+	border: 1px solid #ddd;
+	background: #eee;
+}
+/*-----------------------------------------------
+[ 左・中央・右各ブロックラッパー ]
+global class or id is
+div#container
+-----------------------------------------------*/
+#l_clr_r_wrap {}
+/*-----------------------------------------------
+[ 中央ブロック定義 ]
+global class or id is
+div#l_clr_r_wrap
+-----------------------------------------------*/
+#centercolumn
+,#centercolumn_lc_none
+,#centercolumn_rc_none
+,#centercolumn_lc_none_rc_none {
+	background: #fff;
+}
+#centercolumn {}
+#centercolumn_lc_none {}
+#centercolumn_rc_none {}
+#centercolumn_lc_none_rc_none {}
+.centercolumn_inn {}
+/*-----------------------------------------------
+[ 中央-中央ブロック定義 ]
+global class or id is
+div#centercolumn
+-----------------------------------------------*/
+#centerCcolumn {}
+#centerCcolumn .blockTitle {
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	background: #eee url(../image/cc_title.jpg) no-repeat left top;
+}
+#centerCcolumn .blockContent {}
+/*-----------------------------------------------
+[ 中央-左・右各ブロックラッパー ]
+global class or id is
+div#centercolumn
+-----------------------------------------------*/
+#cl_cr_wrap {}
+/*-----------------------------------------------
+[ 中央-左ブロック定義 ]
+global class or id is
+div#cl_cr_wrap
+-----------------------------------------------*/
+#centerLcolumn {}
+#centerLcolumn .blockTitle {
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	background: #eee url(../image/clr_title.jpg) no-repeat left top;
+}
+#centerLcolumn .blockContent {}
+/*-----------------------------------------------
+[ 中央-右ブロック定義 ]
+global class or id is
+div#cl_cr_wrap
+-----------------------------------------------*/
+#centerRcolumn {}
+#centerRcolumn .blockTitle {
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	background: #eee url(../image/clr_title.jpg) no-repeat left top;
+}
+#centerRcolumn .blockContent {}
+/*-----------------------------------------------
+[ 左ブロック・中央ブロックラッパー ]
+global class or id is
+div#l_clr_r_wrap
+-----------------------------------------------*/
+#left_center_wrap {}
+#left_center_wrap_rc_none {}
+
+/*-----------------------------------------------
+[ 左ブロック定義 ]
+global class or id is
+div#left_center_wrap
+-----------------------------------------------*/
+#leftcolumn {}
+#leftcolumn_rc_none {}
+/*左ブロックタイトルの定義
+-------------------------------------*/
+#leftcolumn .blockTitle, #leftcolumn_rc_none .blockTitle {
+	background: #ccc;
+}
+/*左ブロックコンテンツ定義
+-------------------------------------*/
+#leftcolumn .blockContent, #leftcolumn_rc_none .blockContent {
+	background: #ddd url(../image/lr_col_cont_top.jpg) repeat-x left top;
+}
+/*-----------------------------------------------
+[ メインメニュー定義 ]
+global class or id is
+#leftcolumn .blockContent or
+#rightcolumn .blockContent
+-----------------------------------------------*/
+#mainmenu a {}
+#mainmenu a:hover {
+	background: #eee;
+}
+#mainmenu a.menuTop {
+	border-bottom: 1px solid #bbb;
+}
+#mainmenu a.menuMain {
+	border-bottom: 1px solid #bbb;
+}
+#mainmenu a.menuSub {
+	border-left: 5px solid #bbb;
+	border-bottom: 1px solid #bbb;
+}
+#mainmenu a:hover.menuSub {
+	background: #eee;
+}
+
+/*-----------------------------------------------
+[ ユーザメニュー定義 ]
+global class or id is
+#leftcolumn .blockContent or
+#rightcolumn .blockContent
+-----------------------------------------------*/
+#usermenu a {
+	border-bottom: 1px solid #bbb;
+}
+#usermenu a:hover {
+	background: #eee;
+	border-bottom: 1px solid #bbb;
+}
+#usermenu a.menuTop {
+	border-top: 1px solid #bbb;
+}
+#usermenu a.highlight {}
+/*-----------------------------------------------
+[ 右ブロック定義 ]
+global class or id is
+div#l_clr_r_wrap
+-----------------------------------------------*/
+#rightcolumn {}
+/*右ブロックタイトル定義
+--------------------------------------*/
+#rightcolumn .blockTitle {
+	background: #ccc;
+}
+/*右ブロックコンテンツ定義
+--------------------------------------*/
+#rightcolumn .blockContent {
+	background: #ddd url(../image/lr_col_cont_top.jpg) repeat-x left top;
+}
+/*-----------------------------------------------
+フォーラム定義：外枠
+-----------------------------------------------*/
+.outer {}
+/*-----------------------------------------------
+フォーラム定義：投稿情報欄
+-----------------------------------------------*/
+.head {
+	border: 1px solid #bbb;
+	background: #ddd;
+}
+/*-----------------------------------------------
+フォーラム定義：交互色定義
+-----------------------------------------------*/
+/*テーブル全般定義---------------------*/
+table td {}
+table th {
+	color: #777;
+	border: 1px solid #aaa;
+	background: #ccc url(../image/th.jpg) repeat-x left;
+}
+.even {
+	border: 1px solid #ddd;
+	background: #f5f5f5;
+}
+tr.even td, tr.even {
+	border: 1px solid #ddd;
+}
+.odd {
+	border: 1px solid #ddd;
+	background: #fafafa;
+}
+tr.odd td, tr.odd {
+	border: 1px solid #ddd;
+}
+tr.odd:hover, tr.even:hover {
+	border: 1px solid #ddd;
+	background: #eee;
+}
+/*-----------------------------------------------
+フォーラム定義：フッター
+-----------------------------------------------*/
+.foot {
+	border: 1px solid #bbb;
+	background: #ddd;
+}
+/*-----------------------------------------------
+最新ニュース定義：外枠
+-----------------------------------------------*/
+.item {}
+/*-----------------------------------------------
+最新ニュース定義：タイトルバー
+-----------------------------------------------*/
+.itemHead {
+	border-left: 15px solid #ccc;
+	border-bottom: 5px solid #ccc;
+}
+/*-----------------------------------------------
+最新ニュース定義：投稿情報欄
+-----------------------------------------------*/
+.itemInfo {
+	color: #bbb;
+}
+/*-----------------------------------------------
+最新ニュース定義：タイトル設定
+-----------------------------------------------*/
+.itemTitle {}
+/*-----------------------------------------------
+最新ニュース定義：投稿者
+-----------------------------------------------*/
+.itemPoster {}
+/*-----------------------------------------------
+最新ニュース定義：投稿日
+-----------------------------------------------*/
+.itemPostDate {}
+/*-----------------------------------------------
+最新ニュース定義：ステータス
+-----------------------------------------------*/
+.itemStats {}
+/*-----------------------------------------------
+最新ニュース定義：コンテンツ部分
+-----------------------------------------------*/
+.itemBody {
+	border: 1px solid #f0f0f0;
+}
+.itemText {}
+.itemText:first-letter {}
+/*-----------------------------------------------
+最新ニュース定義：フッター
+-----------------------------------------------*/
+.itemFoot {
+	color: #bbb;
+}
+.itemAdminLink {}
+.itemPermaLink {}
+/*-----------------------------------------------
+システムメッセージ：エラー、コンファーム、リザルト
+-----------------------------------------------*/
+div.errorMsg {
+	background-color: #ffcccc;
+	border-top: 1px solid #ddddff;
+	border-left: 1px solid #ddddff;
+	border-right: 1px solid #aaaaaa;
+	border-bottom: 1px solid #aaaaaa;
+}
+div.confirmMsg {
+	color: #136c99;
+	background-color: #f6f6f6;
+	border-top: 1px solid #ddddff;
+	border-left: 1px solid #ddddff;
+	border-right: 1px solid #aaaaaa;
+	border-bottom: 1px solid #aaaaaa;
+}
+div.resultMsg {
+	color: #777;
+	background-color: #f6f6f6;
+	border-top: 1px solid silver;
+	border-left: 1px solid silver;
+	border-right: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+}
+/*-----------------------------------------------
+Xoopsコード記述定義
+-----------------------------------------------*/
+div.xoopsCode {
+	color: #077;
+	background-color: #add;
+	border: 1px solid #099;
+}
+/*-----------------------------------------------
+引用部分定義
+-----------------------------------------------*/
+div.xoopsQuote {
+	color: #770;
+	background-color: #dda;
+	border: 1px solid #990;
+}
+.comTitle {}
+.comText {}
+.comUserStat {
+	border: 1px solid #020;
+	background: #000;
+}
+.comUserStatCaption {}
+.comUserStatus {}
+.comUserRank {}
+.comUserRankText {}
+.comUserRankImg {}
+.comUserName {}
+.comUserImg {}
+.comDate {}
+.comDateCaption {}
